@@ -39,14 +39,14 @@ class MazeSolverGUI:
                 x1, y1 = c * CELL_SIZE, r * CELL_SIZE
                 x2, y2 = x1 + CELL_SIZE, y1 + CELL_SIZE
                 cell_coords = (r, c)
-                if (r, c) == self.start:
-                    color = "green"
-                elif (r, c) == self.end:
-                    color = "red"
+                if path and (r, c) in path:
+                    color = "purple"
+                elif visited and (r, c) in visited:
+                    color = "yellow"
                 elif self.maze[r][c] == 1:
                     color = "black"
-                elif path and (r, c) in path:
-                    color = "purple"
+                elif (r, c) == self.start:
+                    color = "green"
                 elif visited and (r, c) in visited:
                     color = "yellow"
                 else:
