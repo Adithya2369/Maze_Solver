@@ -1,6 +1,9 @@
 # AI Maze Solver
 
-![Maze Solver Demo](demo.gif) *(example GIF placeholder)*
+![Demo of Generate maze](assets/Generate_maze.gif)
+![Demo of BFS](assets/BFS.gif)
+![Demo of DFS](assets/DFS.gif)
+![Demo of A*](assets/Astar.gif)
 
 ## Overview
 The AI Maze Solver is a Python application that generates random mazes and demonstrates various pathfinding algorithms to solve them. It provides a visual representation of how different algorithms explore and find paths through mazes.
